@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/paul/devel/local/graphics",
+            "binaryPath": "/home/paul/devel/local/graphics/main",
+            "binaryArgs": []
+        }
+    ]
+}
