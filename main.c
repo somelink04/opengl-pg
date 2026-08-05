@@ -5,7 +5,7 @@
 #include <glad/gl.h>
 #include <GLFW/glfw3.h>
 
-void fatal(const char* msg) {
+static void fatal(const char* msg) {
     printf("FATAL: %s\n", msg);
 }
 

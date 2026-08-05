@@ -1,5 +1,8 @@
-main: obj/glad.o lib/libglfw3.a main.c 
-	gcc -o main main.c obj/glad.o -Ivendor/glad/include -Ivendor/glfw/include -Llib -l:libglfw3.a -lm
+main: obj/glad.o lib/libglfw3.a obj/main.o 
+	gcc -o main obj/main.o obj/glad.o -Llib -l:libglfw3.a -lm
+
+obj/main.o: obj main.c
+	gcc -c -o obj/main.o main.c -Ivendor/glad/include -Ivendor/glfw/include 
 
 GLFW_BUILD=.glfw_build
 

@@ -1,4 +1,10 @@
-.glfw_build
-lib
-obj
+# VS Code specific configurations
+.vscode/
+
+# Build folder for GLFW
+.glfw_build/
+
+# compiler and linker output
+lib/
+obj/
 main
